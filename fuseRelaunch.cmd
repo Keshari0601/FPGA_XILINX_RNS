@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/dell/Xilinx/Avishkar_FPGA/main_test_isim_beh.exe" -prj "C:/Users/dell/Xilinx/Avishkar_FPGA/main_test_beh.prj" "work.main_test" "work.glbl" 

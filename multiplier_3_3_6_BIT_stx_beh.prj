@@ -1,0 +1,4 @@
+verilog isim_temp "HALF_ADDER.v"
+verilog isim_temp "FULL_ADDER.v"
+verilog isim_temp "multiplier_3_3_6_BIT.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

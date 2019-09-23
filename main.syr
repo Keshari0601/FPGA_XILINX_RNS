@@ -1,0 +1,1012 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.69 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.69 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Adder_6_BIT.v" in library work
+Compiling verilog file "Adder_4_c.v" in library work
+Module <Adder_6_BIT> compiled
+Compiling verilog file "adder_4bit.v" in library work
+Module <Adder_4_c> compiled
+Compiling verilog file "SUBTRACTOR_6_BIT.v" in library work
+Module <Adder_4_BIT> compiled
+Compiling verilog file "SUBTRACTOR.v" in library work
+Module <SUBTRACTOR_6_BIT> compiled
+Compiling verilog file "Mux_2_1_6_BIT.v" in library work
+Module <SUBTRACTOR_4_BIT> compiled
+Compiling verilog file "Mux_2_1_4_BIT.v" in library work
+Module <Mux_2_1_6_BIT> compiled
+Compiling verilog file "HALF_ADDER.v" in library work
+Module <Mux_2_1_4_BIT> compiled
+Compiling verilog file "FULL_ADDER.v" in library work
+Module <HALF_ADDER> compiled
+Compiling verilog file "Comparator_6_BIT_GE.v" in library work
+Module <FULL_ADDER> compiled
+Compiling verilog file "Comparator_4_BIT_GE.v" in library work
+Module <Comparator_6_BIT_GE> compiled
+Compiling verilog file "Adder_12_BIT.v" in library work
+Module <Comparator_4_BIT_GE> compiled
+Compiling verilog file "SUBTRACTOR_12_BIT.v" in library work
+Module <Adder_12_BIT> compiled
+Compiling verilog file "Mux_2_1_12_BIT.v" in library work
+Module <SUBTRACTOR_12_BIT> compiled
+Compiling verilog file "multiplier_3_3_6_BIT.v" in library work
+Module <Mux_2_1_12_BIT> compiled
+Compiling verilog file "modulus_6_3_BIT.v" in library work
+Module <multiplier_3_3_6_BIT> compiled
+Compiling verilog file "modulus_4_3_BIT.v" in library work
+Module <modulus_6_3_BIT> compiled
+Compiling verilog file "encoder_3_data_4_3_BITS.v" in library work
+Module <modulus_4_3_BIT> compiled
+Compiling verilog file "Complementor.v" in library work
+Module <encoder_3_data_4_3_BITS> compiled
+Compiling verilog file "Comparator_12_BIT_GE.v" in library work
+Module <Complementor> compiled
+Compiling verilog file "adder_6_6_6_BITS.v" in library work
+Module <Comparator_12_BIT_GE> compiled
+Compiling verilog file "adder_3_6_6_BITS.v" in library work
+Module <adder_6_6_6_BITS> compiled
+Compiling verilog file "adder_3bit.v" in library work
+Module <adder_3_6_6_BITS> compiled
+Compiling verilog file "Sub_moduli_single.v" in library work
+Module <adder_3bit> compiled
+Compiling verilog file "rns_inverse_6_3_BIT.v" in library work
+Module <Sub_moduli_single> compiled
+Compiling verilog file "mul_single_sdk.v" in library work
+Module <rns_inverse_6_3_BIT> compiled
+Compiling verilog file "multiplier_6_3_9_BIT.v" in library work
+Module <mul_single_sdk> compiled
+Compiling verilog file "multiplier_6_3_3_12_BITS.v" in library work
+Module <multiplier_6_3_9_BIT> compiled
+Compiling verilog file "modulus_12_8_BIT.v" in library work
+Module <multiplier_6_3_3_12_BITS> compiled
+Compiling verilog file "Adder_moduli_single.v" in library work
+Module <modulus_12_8_BIT> compiled
+Compiling verilog file "adder_12_12_BIT.v" in library work
+Module <Adder_moduli_single> compiled
+Compiling verilog file "Subtraction_main.v" in library work
+Module <adder_12_12_BIT> compiled
+Compiling verilog file "rns_to_binary.v" in library work
+Module <Subtraction_main> compiled
+Compiling verilog file "MUX_2_1_7_BIT.v" in library work
+Module <rns_to_binary> compiled
+Compiling verilog file "MUX_2_1.v" in library work
+Module <MUX_2_1_7_BIT> compiled
+Compiling verilog file "MUL_MAIN.v" in library work
+Module <MUX_2_1> compiled
+Compiling verilog file "Adder_moduli.v" in library work
+Module <MUL_MAIN> compiled
+Compiling verilog file "Adder_7_BIT.v" in library work
+Module <Adder_moduli> compiled
+Compiling verilog file "main.v" in library work
+Module <Adder_7_BIT> compiled
+Module <main> compiled
+No errors in compilation
+Analysis of file <"main.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <main> in library <work>.
+
+Analyzing hierarchy for module <Adder_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <MUX_2_1> in library <work>.
+
+Analyzing hierarchy for module <modulus_4_3_BIT> in library <work>.
+
+Analyzing hierarchy for module <Adder_moduli> in library <work>.
+
+Analyzing hierarchy for module <Subtraction_main> in library <work>.
+
+Analyzing hierarchy for module <MUL_MAIN> in library <work>.
+
+Analyzing hierarchy for module <Adder_7_BIT> in library <work>.
+
+Analyzing hierarchy for module <MUX_2_1_7_BIT> in library <work>.
+
+Analyzing hierarchy for module <rns_to_binary> in library <work>.
+
+Analyzing hierarchy for module <Comparator_4_BIT_GE> in library <work>.
+
+Analyzing hierarchy for module <Mux_2_1_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <SUBTRACTOR_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <Adder_moduli_single> in library <work>.
+
+Analyzing hierarchy for module <Sub_moduli_single> in library <work>.
+
+Analyzing hierarchy for module <mul_single_sdk> in library <work>.
+
+Analyzing hierarchy for module <multiplier_3_3_6_BIT> in library <work>.
+
+Analyzing hierarchy for module <rns_inverse_6_3_BIT> in library <work>.
+
+Analyzing hierarchy for module <multiplier_6_3_3_12_BITS> in library <work>.
+
+Analyzing hierarchy for module <adder_12_12_BIT> in library <work>.
+
+Analyzing hierarchy for module <multiplier_6_3_9_BIT> in library <work>.
+
+Analyzing hierarchy for module <modulus_12_8_BIT> in library <work>.
+
+Analyzing hierarchy for module <Adder_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <Comparator_4_BIT_GE> in library <work>.
+
+Analyzing hierarchy for module <Mux_2_1_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <SUBTRACTOR_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <Complementor> in library <work>.
+
+Analyzing hierarchy for module <modulus_6_3_BIT> in library <work>.
+
+Analyzing hierarchy for module <HALF_ADDER> in library <work>.
+
+Analyzing hierarchy for module <FULL_ADDER> in library <work>.
+
+Analyzing hierarchy for module <encoder_3_data_4_3_BITS> in library <work>.
+
+Analyzing hierarchy for module <adder_3bit> in library <work>.
+
+Analyzing hierarchy for module <modulus_4_3_BIT> in library <work>.
+
+Analyzing hierarchy for module <multiplier_3_3_6_BIT> in library <work>.
+
+Analyzing hierarchy for module <adder_3_6_6_BITS> in library <work>.
+
+Analyzing hierarchy for module <adder_6_6_6_BITS> in library <work>.
+
+Analyzing hierarchy for module <Comparator_12_BIT_GE> in library <work>.
+
+Analyzing hierarchy for module <Mux_2_1_12_BIT> in library <work>.
+
+Analyzing hierarchy for module <SUBTRACTOR_12_BIT> in library <work>.
+
+Analyzing hierarchy for module <Adder_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <Comparator_6_BIT_GE> in library <work>.
+
+Analyzing hierarchy for module <Mux_2_1_6_BIT> in library <work>.
+
+Analyzing hierarchy for module <SUBTRACTOR_6_BIT> in library <work>.
+
+Analyzing hierarchy for module <Comparator_4_BIT_GE> in library <work>.
+
+Analyzing hierarchy for module <Mux_2_1_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <SUBTRACTOR_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <HALF_ADDER> in library <work>.
+
+Analyzing hierarchy for module <FULL_ADDER> in library <work>.
+
+Analyzing hierarchy for module <Adder_12_BIT> in library <work>.
+
+Analyzing hierarchy for module <Adder_6_BIT> in library <work>.
+
+Analyzing hierarchy for module <Adder_4_BIT> in library <work>.
+
+Analyzing hierarchy for module <Adder_4_c> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <main>.
+Module <main> is correct for synthesis.
+ 
+Analyzing module <Adder_4_BIT> in library <work>.
+Module <Adder_4_BIT> is correct for synthesis.
+ 
+Analyzing module <MUX_2_1> in library <work>.
+Module <MUX_2_1> is correct for synthesis.
+ 
+Analyzing module <modulus_4_3_BIT> in library <work>.
+Module <modulus_4_3_BIT> is correct for synthesis.
+ 
+Analyzing module <Comparator_4_BIT_GE> in library <work>.
+Module <Comparator_4_BIT_GE> is correct for synthesis.
+ 
+Analyzing module <Mux_2_1_4_BIT> in library <work>.
+Module <Mux_2_1_4_BIT> is correct for synthesis.
+ 
+Analyzing module <SUBTRACTOR_4_BIT> in library <work>.
+Module <SUBTRACTOR_4_BIT> is correct for synthesis.
+ 
+Analyzing module <Adder_moduli> in library <work>.
+Module <Adder_moduli> is correct for synthesis.
+ 
+Analyzing module <Adder_moduli_single> in library <work>.
+Module <Adder_moduli_single> is correct for synthesis.
+ 
+Analyzing module <Subtraction_main> in library <work>.
+Module <Subtraction_main> is correct for synthesis.
+ 
+Analyzing module <Sub_moduli_single> in library <work>.
+Module <Sub_moduli_single> is correct for synthesis.
+ 
+Analyzing module <Complementor> in library <work>.
+Module <Complementor> is correct for synthesis.
+ 
+Analyzing module <MUL_MAIN> in library <work>.
+Module <MUL_MAIN> is correct for synthesis.
+ 
+Analyzing module <mul_single_sdk> in library <work>.
+Module <mul_single_sdk> is correct for synthesis.
+ 
+Analyzing module <multiplier_3_3_6_BIT> in library <work>.
+Module <multiplier_3_3_6_BIT> is correct for synthesis.
+ 
+Analyzing module <HALF_ADDER> in library <work>.
+Module <HALF_ADDER> is correct for synthesis.
+ 
+Analyzing module <FULL_ADDER> in library <work>.
+Module <FULL_ADDER> is correct for synthesis.
+ 
+Analyzing module <modulus_6_3_BIT> in library <work>.
+Module <modulus_6_3_BIT> is correct for synthesis.
+ 
+Analyzing module <Comparator_6_BIT_GE> in library <work>.
+Module <Comparator_6_BIT_GE> is correct for synthesis.
+ 
+Analyzing module <Mux_2_1_6_BIT> in library <work>.
+Module <Mux_2_1_6_BIT> is correct for synthesis.
+ 
+Analyzing module <SUBTRACTOR_6_BIT> in library <work>.
+Module <SUBTRACTOR_6_BIT> is correct for synthesis.
+ 
+Analyzing module <Adder_6_BIT> in library <work>.
+Module <Adder_6_BIT> is correct for synthesis.
+ 
+Analyzing module <Adder_7_BIT> in library <work>.
+Module <Adder_7_BIT> is correct for synthesis.
+ 
+Analyzing module <MUX_2_1_7_BIT> in library <work>.
+Module <MUX_2_1_7_BIT> is correct for synthesis.
+ 
+Analyzing module <rns_to_binary> in library <work>.
+Module <rns_to_binary> is correct for synthesis.
+ 
+Analyzing module <rns_inverse_6_3_BIT> in library <work>.
+Module <rns_inverse_6_3_BIT> is correct for synthesis.
+ 
+Analyzing module <encoder_3_data_4_3_BITS> in library <work>.
+Module <encoder_3_data_4_3_BITS> is correct for synthesis.
+ 
+Analyzing module <adder_3bit> in library <work>.
+Module <adder_3bit> is correct for synthesis.
+ 
+Analyzing module <multiplier_6_3_3_12_BITS> in library <work>.
+Module <multiplier_6_3_3_12_BITS> is correct for synthesis.
+ 
+Analyzing module <adder_3_6_6_BITS> in library <work>.
+Module <adder_3_6_6_BITS> is correct for synthesis.
+ 
+Analyzing module <adder_12_12_BIT> in library <work>.
+Module <adder_12_12_BIT> is correct for synthesis.
+ 
+Analyzing module <adder_6_6_6_BITS> in library <work>.
+Module <adder_6_6_6_BITS> is correct for synthesis.
+ 
+Analyzing module <multiplier_6_3_9_BIT> in library <work>.
+Module <multiplier_6_3_9_BIT> is correct for synthesis.
+ 
+Analyzing module <modulus_12_8_BIT> in library <work>.
+Module <modulus_12_8_BIT> is correct for synthesis.
+ 
+Analyzing module <Comparator_12_BIT_GE> in library <work>.
+Module <Comparator_12_BIT_GE> is correct for synthesis.
+ 
+Analyzing module <Mux_2_1_12_BIT> in library <work>.
+Module <Mux_2_1_12_BIT> is correct for synthesis.
+ 
+Analyzing module <SUBTRACTOR_12_BIT> in library <work>.
+Module <SUBTRACTOR_12_BIT> is correct for synthesis.
+ 
+Analyzing module <Adder_12_BIT> in library <work>.
+Module <Adder_12_BIT> is correct for synthesis.
+ 
+Analyzing module <Adder_4_c> in library <work>.
+Module <Adder_4_c> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Adder_4_BIT>.
+    Related source file is "adder_4bit.v".
+WARNING:Xst:646 - Signal <g<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit xor2 for signal <result>.
+    Found 4-bit xor2 for signal <p>.
+Unit <Adder_4_BIT> synthesized.
+
+
+Synthesizing Unit <MUX_2_1>.
+    Related source file is "MUX_2_1.v".
+Unit <MUX_2_1> synthesized.
+
+
+Synthesizing Unit <Adder_7_BIT>.
+    Related source file is "Adder_7_BIT.v".
+WARNING:Xst:646 - Signal <g<6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 7-bit xor2 for signal <result>.
+Unit <Adder_7_BIT> synthesized.
+
+
+Synthesizing Unit <MUX_2_1_7_BIT>.
+    Related source file is "MUX_2_1_7_BIT.v".
+Unit <MUX_2_1_7_BIT> synthesized.
+
+
+Synthesizing Unit <Comparator_4_BIT_GE>.
+    Related source file is "Comparator_4_BIT_GE.v".
+    Found 1-bit xor2 for signal <x_0$xor0000> created at line 29.
+    Found 1-bit xor2 for signal <x_1$xor0000> created at line 28.
+    Found 1-bit xor2 for signal <x_2$xor0000> created at line 27.
+Unit <Comparator_4_BIT_GE> synthesized.
+
+
+Synthesizing Unit <Mux_2_1_4_BIT>.
+    Related source file is "Mux_2_1_4_BIT.v".
+Unit <Mux_2_1_4_BIT> synthesized.
+
+
+Synthesizing Unit <Complementor>.
+    Related source file is "Complementor.v".
+WARNING:Xst:646 - Signal <g1<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <g<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit xor2 for signal <comp>.
+    Found 3-bit xor2 for signal <p1>.
+    Found 3-bit xor2 for signal <result>.
+Unit <Complementor> synthesized.
+
+
+Synthesizing Unit <HALF_ADDER>.
+    Related source file is "HALF_ADDER.v".
+    Found 1-bit xor2 for signal <result>.
+Unit <HALF_ADDER> synthesized.
+
+
+Synthesizing Unit <FULL_ADDER>.
+    Related source file is "FULL_ADDER.v".
+    Found 1-bit xor2 for signal <result>.
+    Found 1-bit xor2 for signal <exor>.
+Unit <FULL_ADDER> synthesized.
+
+
+Synthesizing Unit <Comparator_6_BIT_GE>.
+    Related source file is "Comparator_6_BIT_GE.v".
+    Found 1-bit xor2 for signal <x_0$xor0000> created at line 32.
+    Found 1-bit xor2 for signal <x_1$xor0000> created at line 31.
+    Found 1-bit xor2 for signal <x_2$xor0000> created at line 30.
+    Found 1-bit xor2 for signal <x_3$xor0000> created at line 29.
+    Found 1-bit xor2 for signal <x_4$xor0000> created at line 28.
+Unit <Comparator_6_BIT_GE> synthesized.
+
+
+Synthesizing Unit <Mux_2_1_6_BIT>.
+    Related source file is "Mux_2_1_6_BIT.v".
+Unit <Mux_2_1_6_BIT> synthesized.
+
+
+Synthesizing Unit <Adder_6_BIT>.
+    Related source file is "Adder_6_BIT.v".
+WARNING:Xst:646 - Signal <g<5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 6-bit xor2 for signal <result>.
+    Found 6-bit xor2 for signal <p>.
+Unit <Adder_6_BIT> synthesized.
+
+
+Synthesizing Unit <encoder_3_data_4_3_BITS>.
+    Related source file is "encoder_3_data_4_3_BITS.v".
+Unit <encoder_3_data_4_3_BITS> synthesized.
+
+
+Synthesizing Unit <adder_3bit>.
+    Related source file is "adder_3bit.v".
+WARNING:Xst:646 - Signal <g<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit xor2 for signal <result>.
+Unit <adder_3bit> synthesized.
+
+
+Synthesizing Unit <adder_3_6_6_BITS>.
+    Related source file is "adder_3_6_6_BITS.v".
+    Found 6-bit xor2 for signal <result>.
+    Found 3-bit xor2 for signal <p<2:0>>.
+Unit <adder_3_6_6_BITS> synthesized.
+
+
+Synthesizing Unit <adder_6_6_6_BITS>.
+    Related source file is "adder_6_6_6_BITS.v".
+    Found 6-bit xor2 for signal <result>.
+    Found 6-bit xor2 for signal <p>.
+Unit <adder_6_6_6_BITS> synthesized.
+
+
+Synthesizing Unit <Comparator_12_BIT_GE>.
+    Related source file is "Comparator_12_BIT_GE.v".
+    Found 1-bit xor2 for signal <x_0$xor0000> created at line 39.
+    Found 1-bit xor2 for signal <x_1$xor0000> created at line 38.
+    Found 1-bit xor2 for signal <x_10$xor0000> created at line 28.
+    Found 1-bit xor2 for signal <x_2$xor0000> created at line 37.
+    Found 1-bit xor2 for signal <x_3$xor0000> created at line 36.
+    Found 1-bit xor2 for signal <x_4$xor0000> created at line 35.
+    Found 1-bit xor2 for signal <x_5$xor0000> created at line 33.
+    Found 1-bit xor2 for signal <x_6$xor0000> created at line 32.
+    Found 1-bit xor2 for signal <x_7$xor0000> created at line 31.
+    Found 1-bit xor2 for signal <x_8$xor0000> created at line 30.
+    Found 1-bit xor2 for signal <x_9$xor0000> created at line 29.
+Unit <Comparator_12_BIT_GE> synthesized.
+
+
+Synthesizing Unit <Mux_2_1_12_BIT>.
+    Related source file is "Mux_2_1_12_BIT.v".
+Unit <Mux_2_1_12_BIT> synthesized.
+
+
+Synthesizing Unit <Adder_4_c>.
+    Related source file is "Adder_4_c.v".
+    Found 4-bit xor2 for signal <result>.
+    Found 4-bit xor2 for signal <p>.
+Unit <Adder_4_c> synthesized.
+
+
+Synthesizing Unit <SUBTRACTOR_4_BIT>.
+    Related source file is "SUBTRACTOR.v".
+Unit <SUBTRACTOR_4_BIT> synthesized.
+
+
+Synthesizing Unit <multiplier_3_3_6_BIT>.
+    Related source file is "multiplier_3_3_6_BIT.v".
+Unit <multiplier_3_3_6_BIT> synthesized.
+
+
+Synthesizing Unit <SUBTRACTOR_6_BIT>.
+    Related source file is "SUBTRACTOR_6_BIT.v".
+Unit <SUBTRACTOR_6_BIT> synthesized.
+
+
+Synthesizing Unit <adder_12_12_BIT>.
+    Related source file is "adder_12_12_BIT.v".
+WARNING:Xst:646 - Signal <ctemp2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <adder_12_12_BIT> synthesized.
+
+
+Synthesizing Unit <Adder_12_BIT>.
+    Related source file is "Adder_12_BIT.v".
+WARNING:Xst:646 - Signal <cout3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Adder_12_BIT> synthesized.
+
+
+Synthesizing Unit <modulus_4_3_BIT>.
+    Related source file is "modulus_4_3_BIT.v".
+WARNING:Xst:646 - Signal <dividend3<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <modulus_4_3_BIT> synthesized.
+
+
+Synthesizing Unit <Adder_moduli_single>.
+    Related source file is "Adder_moduli_single.v".
+WARNING:Xst:646 - Signal <g<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <final<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit xor2 for signal <p$xor0000> created at line 28.
+    Found 4-bit xor2 for signal <temp_sum>.
+Unit <Adder_moduli_single> synthesized.
+
+
+Synthesizing Unit <Sub_moduli_single>.
+    Related source file is "Sub_moduli_single.v".
+WARNING:Xst:646 - Signal <g<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <final<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit xor2 for signal <p$xor0000> created at line 32.
+    Found 4-bit xor2 for signal <temp_sum>.
+Unit <Sub_moduli_single> synthesized.
+
+
+Synthesizing Unit <modulus_6_3_BIT>.
+    Related source file is "modulus_6_3_BIT.v".
+WARNING:Xst:646 - Signal <dividend5<5:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <modulus_6_3_BIT> synthesized.
+
+
+Synthesizing Unit <multiplier_6_3_3_12_BITS>.
+    Related source file is "multiplier_6_3_3_12_BITS.v".
+WARNING:Xst:646 - Signal <c3_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <multiplier_6_3_3_12_BITS> synthesized.
+
+
+Synthesizing Unit <multiplier_6_3_9_BIT>.
+    Related source file is "multiplier_6_3_9_BIT.v".
+WARNING:Xst:646 - Signal <c1_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <multiplier_6_3_9_BIT> synthesized.
+
+
+Synthesizing Unit <SUBTRACTOR_12_BIT>.
+    Related source file is "SUBTRACTOR_12_BIT.v".
+Unit <SUBTRACTOR_12_BIT> synthesized.
+
+
+Synthesizing Unit <Adder_moduli>.
+    Related source file is "Adder_moduli.v".
+Unit <Adder_moduli> synthesized.
+
+
+Synthesizing Unit <Subtraction_main>.
+    Related source file is "Subtraction_main.v".
+Unit <Subtraction_main> synthesized.
+
+
+Synthesizing Unit <mul_single_sdk>.
+    Related source file is "mul_single_sdk.v".
+Unit <mul_single_sdk> synthesized.
+
+
+Synthesizing Unit <rns_inverse_6_3_BIT>.
+    Related source file is "rns_inverse_6_3_BIT.v".
+WARNING:Xst:1780 - Signal <add_2_4_3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <encoder_a$xor0000> created at line 36.
+    Found 1-bit xor2 for signal <encoder_a$xor0001> created at line 36.
+    Found 1-bit xor2 for signal <encoder_a$xor0002> created at line 36.
+Unit <rns_inverse_6_3_BIT> synthesized.
+
+
+Synthesizing Unit <modulus_12_8_BIT>.
+    Related source file is "modulus_12_8_BIT.v".
+WARNING:Xst:646 - Signal <dividend8<11:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <modulus_12_8_BIT> synthesized.
+
+
+Synthesizing Unit <MUL_MAIN>.
+    Related source file is "MUL_MAIN.v".
+Unit <MUL_MAIN> synthesized.
+
+
+Synthesizing Unit <rns_to_binary>.
+    Related source file is "rns_to_binary.v".
+WARNING:Xst:646 - Signal <final_remainder<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <final_moduli<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <rns_to_binary> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "main.v".
+    Found 1-bit xor2 for signal <and0002$xor0000> created at line 106.
+Unit <main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 1123
+ 1-bit xor2                                            : 638
+ 3-bit xor2                                            : 18
+ 4-bit xor2                                            : 328
+ 6-bit xor2                                            : 138
+ 7-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <a3> is unconnected in block <b_comp_plus_one>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <a3> is unconnected in block <res>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <a1> is unconnected in block <b_comp_plus_one>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <a1> is unconnected in block <b_comp_plus_one>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <a1> is unconnected in block <b_comp_plus_one>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <a1> is unconnected in block <b_comp_plus_one>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 1123
+ 1-bit xor2                                            : 638
+ 3-bit xor2                                            : 18
+ 4-bit xor2                                            : 328
+ 6-bit xor2                                            : 138
+ 7-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <main> ...
+
+Optimizing unit <multiplier_3_3_6_BIT> ...
+
+Optimizing unit <SUBTRACTOR_6_BIT> ...
+
+Optimizing unit <modulus_4_3_BIT> ...
+
+Optimizing unit <modulus_6_3_BIT> ...
+
+Optimizing unit <multiplier_6_3_3_12_BITS> ...
+
+Optimizing unit <SUBTRACTOR_12_BIT> ...
+
+Optimizing unit <modulus_12_8_BIT> ...
+
+Optimizing unit <rns_to_binary> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 26.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 1842
+#      GND                         : 1
+#      LUT2                        : 97
+#      LUT3                        : 319
+#      LUT4                        : 1306
+#      MUXF5                       : 104
+#      MUXF6                       : 15
+# IO Buffers                       : 26
+#      IBUF                        : 19
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      974  out of   4656    20%  
+ Number of 4 input LUTs:               1722  out of   9312    18%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    232    11%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 153.966ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 7389315367828632000000000000000 / 7
+-------------------------------------------------------------------------
+Delay:               153.966ns (Levels of Logic = 138)
+  Source:            operation<0> (PAD)
+  Destination:       result<6> (PAD)
+
+  Data Path: operation<0> to result<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            29   1.106   1.141  operation_0_IBUF (operation_0_IBUF)
+     LUT2:I1->O            9   0.612   0.727  result1<0>11 (N81)
+     LUT4:I2->O           38   0.612   1.143  two_comp_or_rns_2/result_2_or00001 (passing_mux_2<2>)
+     LUT4:I1->O            1   0.612   0.509  mod_rns22/sub3/b_comp_plus_one_not0000<1>111 (mod_rns22/sub3/b_comp_plus_one_not0000<1>111)
+     LUT4:I0->O            2   0.612   0.532  mod_rns22/sub3/b_comp_plus_one_not0000<1>156_SW0 (N751)
+     LUT4:I0->O            1   0.612   0.000  mod_rns22/sub3/b_comp_plus_one_not0000<1>156_F (N1273)
+     MUXF5:I0->O           3   0.278   0.520  mod_rns22/sub3/b_comp_plus_one_not0000<1>156 (mod_rns22/sub3/b_comp_plus_one/p<1>)
+     LUT3:I1->O            1   0.612   0.000  mod_rns22/sub3/res/Mxor_result_Result<2>211 (mod_rns22/sub3/res/Mxor_result_Result<2>21)
+     MUXF5:I1->O           5   0.278   0.607  mod_rns22/sub3/res/Mxor_result_Result<2>21_f5 (mod_rns22/N9)
+     LUT2:I1->O            6   0.612   0.599  mod_rns22/sub3/res/Mxor_result_Result<2>1 (rns22<2>)
+     LUT4:I2->O            1   0.612   0.509  mul_final/m2/m1/fa3/Mxor_result_Result2 (mul_final/m2/m1/fa3/Mxor_result_Result2)
+     LUT4:I0->O            4   0.612   0.568  mul_final/m2/m1/fa3/Mxor_result_Result37 (mul_final/m2/multi1<4>)
+     LUT4:I1->O            2   0.612   0.383  mul_final/m2/mm/comp1/ge1 (mul_final/m2/mm/comp1_out)
+     LUT4:I3->O            3   0.612   0.603  mul_final/m2/mm/sub1/res/Mxor_p_Result<4>1 (mul_final/m2/mm/dividend1<4>)
+     LUT4:I0->O            4   0.612   0.502  mul_final/m2/mm/comp2/ge_SW2 (N489)
+     LUT4:I3->O            4   0.612   0.651  mul_final/m2/mm/mux2/result_3_and00001 (mul_final/m2/mm/mux2/result_3_and0000)
+     LUT4:I0->O            1   0.612   0.387  mul_final/m2/mm/sub2/res/c_5_or0000 (mul_final/m2/mm/sub2/res/c<5>)
+     LUT4:I2->O            1   0.612   0.426  mul_final/m2/mm/sub2/res/Mxor_result_Result<5>1_SW0 (N1143)
+     LUT4:I1->O            3   0.612   0.454  mul_final/m2/mm/sub2/res/Mxor_result_Result<5>1 (mul_final/m2/mm/comp3/x_4_xor0000)
+     LUT4:I3->O            6   0.612   0.721  mul_final/m2/mm/comp3/ge59 (mul_final/m2/mm/mux_sel_3)
+     LUT2:I0->O            2   0.612   0.449  mul_final/m2/mm/mux3/result_2_and00001 (mul_final/m2/mm/mux3/result_2_and0000)
+     LUT4:I1->O            5   0.612   0.690  mul_final/m2/mm/sub3/res/c_4_or00001 (mul_final/m2/mm/sub3/res/c<4>)
+     LUT4:I0->O            1   0.612   0.387  mul_final/m2/mm/sub3/res/c_5_or0000 (mul_final/m2/mm/sub3/res/c<5>)
+     LUT3:I2->O            5   0.612   0.690  mul_final/m2/mm/sub3/res/Mxor_result_Result<5>1 (mul_final/m2/mm/comp4/x_4_xor0000)
+     LUT4:I0->O            3   0.612   0.520  mul_final/m2/mm/comp4/ge69 (mul_final/m2/mm/mux_sel_4)
+     LUT3:I1->O            4   0.612   0.651  mul_final/m2/mm/sub4/res/Mxor_result_Result<1>1 (mul_final/m2/mm/dividend4<1>)
+     LUT4:I0->O            1   0.612   0.000  mul_final/m2/mm/comp5/ge1061 (mul_final/m2/mm/comp5/ge1061)
+     MUXF5:I1->O           2   0.278   0.532  mul_final/m2/mm/comp5/ge106_f5 (mul_final/m2/mm/comp5/ge106)
+     LUT4:I0->O            1   0.612   0.000  mul_final/m2/mm/comp5/ge1211 (mul_final/m2/mm/comp5/ge1211)
+     MUXF5:I1->O           1   0.278   0.509  mul_final/m2/mm/comp5/ge121_f5 (mul_final/m2/mm/comp5/ge121)
+     LUT4:I0->O            4   0.612   0.651  mul_final/m2/mm/comp5/ge200 (mul_final/m2/mm/comp5/ge200)
+     LUT2:I0->O            2   0.612   0.410  mul_final/m2/mm/comp5/ge251 (mul_final/m2/mm/mux_sel_5)
+     LUT4:I2->O            1   0.612   0.509  mul_final/m2/mm/sub5/res/Mxor_p_Result<2>1_SW0 (N969)
+     LUT4:I0->O            1   0.612   0.387  mul_final/m2/mm/sub5/res/Mxor_p_Result<2>1 (mul_final/m2/mm/sub5/res/p<2>)
+     LUT4:I2->O            1   0.612   0.000  result2<2>289_G (N1256)
+     MUXF5:I1->O           4   0.278   0.651  result2<2>289 (result2<2>289)
+     LUT3:I0->O           11   0.612   0.945  result2<2>321 (result2<2>)
+     LUT4:I0->O            1   0.612   0.426  r1/mul2/m121/ha3/Mxor_result_Result85 (r1/mul2/m121/ha3/Mxor_result_Result85)
+     LUT4:I1->O            1   0.612   0.509  r1/mul2/m121/ha3/Mxor_result_Result176_SW0 (N451)
+     LUT4:I0->O            3   0.612   0.520  r1/mul2/m121/ha3/Mxor_result_Result176 (r1/mul2/product_121<3>)
+     LUT4:I1->O            3   0.612   0.481  r1/mul2/a1/Mxor_result_Result<2>21 (r1/mul2/N8)
+     LUT3:I2->O            8   0.612   0.795  r1/mul2/a1/Mxor_result_Result<2>1 (r1/mul2/p1<5>)
+     LUT4:I0->O            1   0.612   0.387  r1/mul2/m1232/ha3/Mxor_result_Result96_SW0 (N569)
+     LUT3:I2->O            1   0.612   0.509  r1/mul2/m1232/ha3/Mxor_result_Result96 (r1/mul2/m1232/ha3/Mxor_result_Result96)
+     LUT4:I0->O            1   0.612   0.509  r1/mul2/m1232/ha3/Mxor_result_Result161_SW0 (N979)
+     LUT4:I0->O            2   0.612   0.532  r1/mul2/m1232/ha3/Mxor_result_Result161 (r1/mul2/product_1232<3>)
+     LUT4:I0->O            3   0.612   0.603  r1/mul2/a3/Mxor_result_Result<0>140 (r1/mul2/N02)
+     LUT4:I0->O            2   0.612   0.532  r1/mul2/a3/Mxor_result_Result<0>2 (r1/p2<6>)
+     LUT4:I0->O            3   0.612   0.481  r1/a1/a2/Mxor_result_Result<1>11 (r1/N20)
+     LUT4:I2->O            2   0.612   0.532  r1/a2/a2/Mxor_p_Result<1>1 (r1/a2/a2/p<1>)
+     LUT4:I0->O            2   0.612   0.532  r1/a2/a2/c_2_or000012 (r1/a2/a2/c_2_or000012)
+     LUT4:I0->O            2   0.612   0.532  r1/a2/a2/c_3_or00001 (r1/a2/a2/c<3>)
+     LUT3:I0->O            2   0.612   0.532  r1/a2/a2/c_4_or00001 (r1/a2/a2/c<4>)
+     LUT4:I0->O            1   0.612   0.387  r1/a2/a2/c_5_or00001 (r1/a2/a2/c<5>)
+     LUT4:I2->O            1   0.612   0.387  r1/a2/a2/Mxor_result_Result<5>1_SW0 (N983)
+     LUT4:I2->O            3   0.612   0.603  r1/a2/a2/Mxor_result_Result<5>1 (r1/sum_final<11>)
+     LUT4:I0->O            8   0.612   0.795  r1/mfinal/mux_sel_1149 (r1/mfinal/mux_sel_1)
+     LUT4:I0->O            3   0.612   0.520  r1/mfinal/mux1/result_7_and00001 (r1/mfinal/mux1/result_7_and0000)
+     LUT4:I1->O            1   0.612   0.387  r1/mfinal/sub1/res/a3/c_2_or000061_SW0 (N515)
+     LUT3:I2->O            2   0.612   0.383  r1/mfinal/sub1/res/a3/c_2_or000061 (r1/mfinal/sub1/res/a3/c<2>)
+     LUT4:I3->O            4   0.612   0.651  r1/mfinal/sub1/res/a3/Mxor_result_Result<2>1 (r1/mfinal/dividend1<10>)
+     LUT4:I0->O            1   0.612   0.426  r1/mfinal/mux_sel_2188_SW0 (N767)
+     LUT4:I1->O            2   0.612   0.449  r1/mfinal/mux_sel_2188 (r1/mfinal/mux_sel_2188)
+     LUT4:I1->O            1   0.612   0.000  r1/mfinal/mux_sel_2246_SW11 (r1/mfinal/mux_sel_2246_SW1)
+     MUXF5:I1->O           1   0.278   0.387  r1/mfinal/mux_sel_2246_SW1_f5 (N1095)
+     LUT4:I2->O           11   0.612   0.945  r1/mfinal/mux_sel_2246 (r1/mfinal/mux_sel_2)
+     LUT4:I0->O            2   0.612   0.532  r1/mfinal/mux2/result_6_and00001 (r1/mfinal/mux2/result_6_and0000)
+     LUT4:I0->O            3   0.612   0.454  r1/mfinal/sub2/res/a2/cout (r1/mfinal/sub2/res/cout2)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/sub2/res/a3/c_2_or000062_SW0 (N513)
+     LUT3:I2->O            2   0.612   0.383  r1/mfinal/sub2/res/a3/c_2_or000062 (r1/mfinal/sub2/res/a3/c<2>)
+     LUT4:I3->O            4   0.612   0.502  r1/mfinal/sub2/res/a3/Mxor_result_Result<2>1 (r1/mfinal/dividend2<10>)
+     LUT4:I3->O            2   0.612   0.383  r1/mfinal/comp3/Mxor_x_9_xor0000_Result1 (r1/mfinal/comp3/x_9_xor0000)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/mux_sel_3215 (r1/mfinal/mux_sel_3215)
+     LUT4:I2->O            7   0.612   0.671  r1/mfinal/mux_sel_3268 (r1/mfinal/mux_sel_3268)
+     LUT3:I1->O            2   0.612   0.449  r1/mfinal/mux3/result_5_and00001 (r1/mfinal/mux3/result_5_and0000)
+     LUT4:I1->O            3   0.612   0.603  r1/mfinal/sub3/res/a2/c_3_or00001 (r1/mfinal/sub3/res/a2/c<3>)
+     LUT4:I0->O            3   0.612   0.454  r1/mfinal/sub3/res/a2/cout (r1/mfinal/sub3/res/cout2)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/sub3/res/a3/c_2_or000062_SW0 (N511)
+     LUT3:I2->O            2   0.612   0.383  r1/mfinal/sub3/res/a3/c_2_or000062 (r1/mfinal/sub3/res/a3/c<2>)
+     LUT4:I3->O            2   0.612   0.532  r1/mfinal/sub3/res/a3/c_3_or00001 (r1/mfinal/sub3/res/a3/c<3>)
+     LUT4:I0->O            2   0.612   0.532  r1/mfinal/sub3/res/a3/Mxor_result_Result<3>1 (r1/mfinal/dividend3<11>)
+     LUT4:I0->O            1   0.612   0.509  r1/mfinal/comp4/ge19 (r1/mfinal/comp4/ge19)
+     LUT4:I0->O           13   0.612   0.988  r1/mfinal/comp4/ge293 (r1/mfinal/mux_sel_4)
+     LUT4:I0->O            3   0.612   0.520  r1/mfinal/mux4/result_4_and00001 (r1/mfinal/mux4/result_4_and0000)
+     LUT4:I1->O            2   0.612   0.383  r1/mfinal/sub4/res/a2/c_2_or00001 (r1/mfinal/sub4/res/a2/c<2>)
+     LUT4:I3->O            2   0.612   0.532  r1/mfinal/sub4/res/a2/c_3_or00001 (r1/mfinal/sub4/res/a2/c<3>)
+     LUT4:I0->O            3   0.612   0.454  r1/mfinal/sub4/res/a2/cout (r1/mfinal/sub4/res/cout2)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/sub4/res/a3/c_2_or000062_SW0 (N509)
+     LUT3:I2->O            2   0.612   0.383  r1/mfinal/sub4/res/a3/c_2_or000062 (r1/mfinal/sub4/res/a3/c<2>)
+     LUT4:I3->O            4   0.612   0.529  r1/mfinal/sub4/res/a3/Mxor_result_Result<2>1 (r1/mfinal/dividend4<10>)
+     LUT4:I2->O            2   0.612   0.532  r1/mfinal/comp5/Mxor_x_9_xor0000_Result1 (r1/mfinal/comp5/x_9_xor0000)
+     LUT4:I0->O            1   0.612   0.509  r1/mfinal/comp5/ge63 (r1/mfinal/comp5/ge63)
+     LUT3:I0->O            1   0.612   0.360  r1/mfinal/comp5/ge264_SW0 (N929)
+     LUT4:I3->O           16   0.612   1.031  r1/mfinal/comp5/ge264 (r1/mfinal/mux_sel_5)
+     LUT4:I0->O            3   0.612   0.520  r1/mfinal/mux5/result_3_and00001 (r1/mfinal/mux5/result_3_and0000)
+     LUT4:I1->O            1   0.612   0.387  r1/mfinal/sub5/res/a2/c_2_or000061_SW0 (N507)
+     LUT3:I2->O            2   0.612   0.383  r1/mfinal/sub5/res/a2/c_2_or000061 (r1/mfinal/sub5/res/a2/c<2>)
+     LUT4:I3->O            4   0.612   0.568  r1/mfinal/sub5/res/a2/c_3_or00001 (r1/mfinal/sub5/res/a2/c<3>)
+     LUT4:I1->O            3   0.612   0.481  r1/mfinal/sub5/res/a2/cout (r1/mfinal/sub5/res/cout2)
+     LUT4:I2->O            1   0.612   0.387  r1/mfinal/sub5/res/a3/Mxor_result_Result<1>1_SW1 (N1003)
+     LUT4:I2->O            5   0.612   0.607  r1/mfinal/sub5/res/a3/Mxor_result_Result<1>1 (r1/mfinal/dividend5<9>)
+     LUT4:I1->O            1   0.612   0.509  r1/mfinal/comp6/ge2417 (r1/mfinal/comp6/ge2417)
+     LUT4:I0->O            1   0.612   0.387  r1/mfinal/comp6/ge227_SW0 (N613)
+     LUT4:I2->O           15   0.612   1.016  r1/mfinal/comp6/ge227 (r1/mfinal/mux_sel_6)
+     LUT4:I0->O            3   0.612   0.520  r1/mfinal/mux6/result_2_and00001 (r1/mfinal/mux6/result_2_and0000)
+     LUT4:I1->O            3   0.612   0.454  r1/mfinal/sub6/res/a1/cout1 (r1/mfinal/sub6/res/cout1)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/sub6/res/a2/c_2_or000062_SW0 (N503)
+     LUT3:I2->O            2   0.612   0.383  r1/mfinal/sub6/res/a2/c_2_or000062 (r1/mfinal/sub6/res/a2/c<2>)
+     LUT4:I3->O            4   0.612   0.568  r1/mfinal/sub6/res/a2/c_3_or00001 (r1/mfinal/sub6/res/a2/c<3>)
+     LUT4:I1->O            3   0.612   0.454  r1/mfinal/sub6/res/a2/cout (r1/mfinal/sub6/res/cout2)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/sub6/res/a3/c_2_or000062_SW0 (N501)
+     LUT3:I2->O            3   0.612   0.454  r1/mfinal/sub6/res/a3/c_2_or000062 (r1/mfinal/sub6/res/a3/c<2>)
+     LUT4:I3->O            2   0.612   0.532  r1/mfinal/sub6/res/a3/Mxor_result_Result<3>1 (r1/mfinal/comp7/x_10_xor0000)
+     LUT3:I0->O            2   0.612   0.532  r1/mfinal/comp7/ge1411 (r1/mfinal/N81)
+     LUT3:I0->O            1   0.612   0.509  r1/mfinal/comp7/ge21 (r1/mfinal/comp7/ge21)
+     LUT4:I0->O           17   0.612   1.045  r1/mfinal/comp7/ge274 (r1/mfinal/mux_sel_7)
+     LUT4:I0->O            2   0.612   0.449  r1/mfinal/mux7/result_1_and00001 (r1/mfinal/mux7/result_1_and0000)
+     LUT4:I1->O            2   0.612   0.383  r1/mfinal/sub7/res/a1/c_3_or0000 (r1/mfinal/sub7/res/a1/c<3>)
+     LUT4:I3->O            3   0.612   0.454  r1/mfinal/sub7/res/a1/cout1 (r1/mfinal/sub7/res/cout1)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/sub7/res/a2/c_2_or000062_SW0 (N499)
+     LUT3:I2->O            2   0.612   0.383  r1/mfinal/sub7/res/a2/c_2_or000062 (r1/mfinal/sub7/res/a2/c<2>)
+     LUT4:I3->O            3   0.612   0.603  r1/mfinal/sub7/res/a2/c_3_or00001 (r1/mfinal/sub7/res/a2/c<3>)
+     LUT4:I0->O            3   0.612   0.603  r1/mfinal/sub7/res/a2/cout (r1/mfinal/sub7/res/cout2)
+     LUT4:I0->O            1   0.612   0.000  r1/mfinal/comp8/ge32112_SW1_F (N1281)
+     MUXF5:I0->O           1   0.278   0.360  r1/mfinal/comp8/ge32112_SW1 (N1065)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/comp8/ge32112 (r1/mfinal/comp8/ge32112)
+     LUT3:I2->O            1   0.612   0.360  r1/mfinal/comp8/ge32192_SW0 (N399)
+     LUT4:I3->O            1   0.612   0.387  r1/mfinal/comp8/ge32192 (r1/mfinal/N64)
+     LUT4:I2->O           15   0.612   1.016  r1/mfinal/comp8/ge3221 (r1/mfinal/mux_sel_8)
+     LUT2:I0->O            4   0.612   0.568  r1/mfinal/mux8/result_1_and00001 (r1/mfinal/mux8/result_1_and0000)
+     LUT4:I1->O            1   0.612   0.509  r1/mfinal/sub8/res/a1/c_3_or000080 (r1/mfinal/sub8/res/a1/c_3_or000080)
+     LUT4:I0->O            2   0.612   0.383  r1/mfinal/sub8/res/a1/c_3_or000082 (r1/mfinal/sub8/res/a1/c<3>)
+     LUT4:I3->O            3   0.612   0.481  r1/mfinal/sub8/res/a1/cout1 (r1/mfinal/sub8/res/cout1)
+     LUT4:I2->O            1   0.612   0.387  r1/mfinal/sub8/res/a2/Mxor_result_Result<1>1_SW1 (N1001)
+     LUT4:I2->O            4   0.612   0.651  r1/mfinal/sub8/res/a2/Mxor_result_Result<1>1 (temp_final_result<5>)
+     LUT4:I0->O            1   0.612   0.360  final_mux/result_6_or0000_SW1 (N395)
+     LUT4:I3->O            1   0.612   0.357  final_mux/result_6_or0000 (result_6_OBUF)
+     OBUF:I->O                 3.169          result_6_OBUF (result<6>)
+    ----------------------------------------
+    Total                    153.966ns (85.169ns logic, 68.797ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.31 secs
+ 
+--> 
+
+Total memory usage is 4617916 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

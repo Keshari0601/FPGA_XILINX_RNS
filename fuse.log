@@ -1,0 +1,95 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/dell/Xilinx/Avishkar_FPGA/main_test_isim_beh.exe -prj C:/Users/dell/Xilinx/Avishkar_FPGA/main_test_beh.prj work.main_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Adder_6_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Adder_4_c.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/adder_4bit.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/SUBTRACTOR_6_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/SUBTRACTOR.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Mux_2_1_6_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Mux_2_1_4_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/HALF_ADDER.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/FULL_ADDER.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Comparator_6_BIT_GE.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Comparator_4_BIT_GE.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Adder_12_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/SUBTRACTOR_12_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Mux_2_1_12_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/multiplier_3_3_6_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/modulus_6_3_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/modulus_4_3_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/encoder_3_data_4_3_BITS.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Complementor.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Comparator_12_BIT_GE.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/adder_6_6_6_BITS.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/adder_3_6_6_BITS.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/adder_3bit.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Sub_moduli_single.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/rns_inverse_6_3_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/mul_single_sdk.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/multiplier_6_3_9_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/multiplier_6_3_3_12_BITS.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/modulus_12_8_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Adder_moduli_single.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/adder_12_12_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Subtraction_main.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/rns_to_binary.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/MUX_2_1_7_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/MUX_2_1.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/MUL_MAIN.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Adder_moduli.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/Adder_7_BIT.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/main.v" into library work
+Analyzing Verilog file "C:/Users/dell/Xilinx/Avishkar_FPGA/main_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Adder_4_BIT
+Compiling module MUX_2_1
+Compiling module Comparator_4_BIT_GE
+Compiling module Mux_2_1_4_BIT
+Compiling module SUBTRACTOR_4_BIT
+Compiling module modulus_4_3_BIT
+Compiling module Adder_moduli_single
+Compiling module Adder_moduli
+Compiling module Complementor
+Compiling module Sub_moduli_single
+Compiling module Subtraction_main
+Compiling module HALF_ADDER
+Compiling module FULL_ADDER
+Compiling module multiplier_3_3_6_BIT
+Compiling module Comparator_6_BIT_GE
+Compiling module Mux_2_1_6_BIT
+Compiling module Adder_6_BIT
+Compiling module SUBTRACTOR_6_BIT
+Compiling module modulus_6_3_BIT
+Compiling module mul_single_sdk
+Compiling module MUL_MAIN
+Compiling module Adder_7_BIT
+Compiling module MUX_2_1_7_BIT
+Compiling module encoder_3_data_4_3_BITS
+Compiling module adder_3bit
+Compiling module rns_inverse_6_3_BIT
+Compiling module adder_3_6_6_BITS
+Compiling module multiplier_6_3_3_12_BITS
+Compiling module adder_6_6_6_BITS
+Compiling module adder_12_12_BIT
+Compiling module multiplier_6_3_9_BIT
+Compiling module Comparator_12_BIT_GE
+Compiling module Mux_2_1_12_BIT
+Compiling module Adder_4_c
+Compiling module Adder_12_BIT
+Compiling module SUBTRACTOR_12_BIT
+Compiling module modulus_12_8_BIT
+Compiling module rns_to_binary
+Compiling module main
+Compiling module main_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 41 Verilog Units
+Built simulation executable C:/Users/dell/Xilinx/Avishkar_FPGA/main_test_isim_beh.exe
+Fuse Memory Usage: 29896 KB
+Fuse CPU Usage: 984 ms
